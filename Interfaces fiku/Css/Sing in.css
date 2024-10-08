@@ -1,0 +1,68 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(45deg, #ffae00, #ff47d1); /* El gradiente cubre todo el fondo */
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+main {
+    flex-grow: 1;
+    max-width: 700px;
+    margin: 2em auto;
+    padding: 1em;
+    background: none; /* Elimina fondo del main */
+}
+
+p {
+    line-height: 1.6;
+}
+
+form {
+    max-width: 400px; /* Corregido el ancho para ser más manejable */
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.2); /* Fondo semitransparente para el formulario */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
+    border: 1px solid wheat; /* Corregido el borde */
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Corregido el borde */
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.1); /* Fondo semi transparente para inputs */
+    color: white; /* Color de texto en inputs */
+}
+
+input::placeholder{
+    color: white;
+}
+
+button {
+    background-color: #bd7c04;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #a86803; /* Efecto hover en el botón */
+}
